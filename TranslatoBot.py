@@ -9,7 +9,7 @@ class translato():
         self.base = "https://api.telegram.org/bot{}/".format(self.token)
 
     def get_updates(self, offset=None):
-        url = "https://api.telegram.org/bot1466178162:AAFAoDChB3B4T4W5aYYV2IdXuT51BbJ6zYM/getUpdates?timeout=100"
+        url = "https://api.telegram.org/bot<token_key>/getUpdates?timeout=100"
         if offset:
             url = url + "&offset={}".format(offset + 1)
         r = requests.get(url)
