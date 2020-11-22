@@ -7,4 +7,4 @@ The translato class takes care of reading the token from the config.cfg file, ge
 
 NOTE: the googletrans module is unstable and its advisable to install it using : pip install git+https://github.com/BoseCorp/py-googletrans.git --upgrade
 
-it also times out the server after inactivity or returns None requiring the server to be restarted. 
+it also times out the server after inactivity or returns None requiring the server to be restarted. This has been fixed by using subprocess.Popen to run the server.py file. when an error occurs due to googletrans, the server will be automatically restarted.
